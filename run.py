@@ -135,7 +135,7 @@ def calculate_stock_data(data):
         new_stock_data.append(round(stock_num))
 
     return new_stock_data
-    
+
 
 def main():
     """
@@ -154,4 +154,10 @@ def main():
 
 
 print("\nWelcome to Love Sandwiches Data Automation")
-main()
+#main()
+
+
+def get_stock_values(data):
+    headings = SHEET.worksheet('stock').row_values(1)
+    return headings
+    
